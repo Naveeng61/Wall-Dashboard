@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Main Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f8f5;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: #d9ebf4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            color: #da4321;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            margin-top: 20px;
+        }
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 20px;
+            color: #000101;
+            text-align: center;
+            text-decoration: none;
+        }
+        .card:nth-child(1) { background-color: #ceef6d; }
+        .card:nth-child(2) { background-color: #4e9506; }
+        .card:nth-child(3) { background-color: #ed8c42; }
+        .card:nth-child(4) { background-color: #079ddd; }
+        .card:nth-child(5) { background-color: #ffd966; }
+        .card:nth-child(6) { background-color: #b6b8b9; }
+        .card:nth-child(7) { background-color: #d78787; }
+        .card:nth-child(8) { background-color: #f02828; }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2 class="title">Main Dashboard</h2>  
+    </div>
+    <div class="dashboard">
+        <a href=" " class="card">Total Field deployed Batteries (55000 / 88%)</a>
+        <a href=" " class="card">Battery TIU connectivity (30000 / 55%)</a>
+        <a href=" " class="card">Quarantined Battery details (250 / 0.004%)</a>
+        <a href=" " class="card">Battery Upgradation(SCU/TIU) (6000 / 11%)</a>
+        <a href=" " class="card">Alert Monitoring</a>
+        <a href=" " class="card">Battery Unlock(Struck)</a>
+        <a href=" " class="card">Battery Not in Swap (7500 / 13%)</a>
+        <a href=" " class="card">Battery Reports (7500 / 13%)</a>
+    </div>
+</body>
+</html>
